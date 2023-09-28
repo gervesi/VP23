@@ -1,2 +1,2 @@
-# ryhm2
-2023 veebiprogrammeerimine ryhm 2 esimene repo kus on kõik vajalik
+# VP23
+2023 veebiprogrammeerimine esimene repo kus on kõik vajalik
