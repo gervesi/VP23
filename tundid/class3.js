@@ -1,15 +1,15 @@
 const firstName = "German";
 const lastName = "Vesi";
 const dateInfo = require("./dateTime_et");
-//lisame failisüsteemi moodul
+//lisame failisüsteemi mooduli
 const fs = require("fs");
 let folkWisdom = [];
 
-fs.readFile("vanasonad.txt", "utf8", (err, data)=>{
+fs.readFile("txtfiles/vanasonad.txt", "utf8", (err, data)=>{
 	if(err){
 		console.log(err);
 	}
-	else{
+	else {
 		//console.log(data);
 		folkWisdom = data.split(";");
 		//console.log(folkWisdom);
@@ -24,7 +24,7 @@ const onScreen = function(){
 	//console.log("Tänane tarkus: " + folkWisdom[Math.floor(Math.random() * folkWisdom.length)]);
 	//kõige tavalisem tsükkel (loop)
 	for (let i = 0; i < folkWisdom.length; i ++){
-		console.log((i + 1) + ") " + folkWisdom[i]);
+		console.log((i + 1) + ") " + folkWisdom[i]); 
 	}
 	console.log("Kell on: " + dateInfo.timeNowET());
 	console.log("On " + dateInfo.timeOfDayET() + ".");
